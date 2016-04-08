@@ -58,3 +58,8 @@ header h1 {
   word-wrap: break-word;
   min-height: 42px;
 }
+
+.selected {
+	background-color: #3498db;
+	color: #fff;
+}

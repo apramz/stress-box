@@ -23,7 +23,7 @@ var main = function() {
     	}
     });
 
-    $('li').click(function() {
+    $('li').on('click', 'li', function() {
 		$(this).addClass('selected');
 	});
 
