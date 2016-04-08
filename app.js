@@ -23,16 +23,18 @@ var main = function() {
     	}
     });
 
-    $('li').on('click', 'li', function() {
-		$(this).addClass('selected');
-	});
 
-    $('#delete').click(function() {
-    	$('.selected').hide();
-	});
 
 
     $('#post').addClass('disabled');
 };
 
 $(document).ready(main)
+
+    $('li').on('click', 'li', function() {
+        $(this).addClass('selected');
+    });
+
+    $('#delete').click(function() {
+        $('.selected').hide();
+    });
