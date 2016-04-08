@@ -59,7 +59,8 @@ header h1 {
   min-height: 42px;
 }
 
-.selected {
+li.selected {
 	background-color: #3498db;
 	color: #fff;
+	font-weight: bold;
 }
