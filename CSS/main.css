@@ -1,3 +1,16 @@
+/******************************
+			FONTS
+******************************/
+
+@font-face {
+	font-family: 'Proxima Nova'; 
+	src: url('fonts/proxmianovabold.otf');
+}
+
+/******************************
+			BODY
+******************************/
+
 html,
 body {
 	font-family: 'Roboto', sans-serif;
@@ -16,9 +29,8 @@ header .row {
 }
 
 header h1 {
-	font-style: italic;
+	font-family: 'Proxima Nova';
 	color: #2980b9;
-	font-weight: 600;
 	margin: 0;
 }
 
