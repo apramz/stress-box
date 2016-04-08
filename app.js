@@ -24,8 +24,12 @@ var main = function() {
     });
 
     $('.posts').on('click', 'li', function() {
-        $('li').removeClass('selected');
-		$(this).addClass('selected');
+		if($(this).hasClass('selected')) {
+            $(this).removeClass('selected');
+        }
+        else {
+            $(this).addClass('selected');             
+        }
 	});
 
     $('#delete').click(function() {
