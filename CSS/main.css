@@ -17,19 +17,29 @@ header .row {
 
 header h1 {
 	font-style: italic;
-	color: #2980b9;
+	color: #3498db;
 	font-weight: 600;
 	margin: 0;
 }
 
 .container {
 	width: 550px;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .button-group {
 	margin-bottom: 20px;
 	color: #34495e;
+}
+
+/*#post {
+	background-color: #27ae60;
+	border-color: #27ae60;
+}*/
+
+#delete {
+	background-color: #e74c3c;
+	border-color: #e74c3c;
 }
 
 .counter {
@@ -38,7 +48,6 @@ header h1 {
 	margin-bottom: 0;
 	margin-right: 10px;
 }
-
 
 .posts {
 	clear: both;
@@ -60,7 +69,8 @@ header h1 {
 }
 
 li.selected {
-	background-color: #3498db;
+	background-color: #e74c3c;
 	color: #fff;
 	font-weight: bold;
+	font-style: oblique;
 }
