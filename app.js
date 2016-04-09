@@ -25,10 +25,10 @@ var main = function() {
 
     $('.posts').on('click', 'li', function() {
 		if($(this).hasClass('selected')) {
-            $(this).removeClass('selected');
+            $(this).removeClass('selected').effect('shake', {times: 2}, 300);
         }
         else {
-            $(this).addClass('selected');             
+            $(this).addClass('selected').effect('shake', {times: 2}, 300);                  
         }
 	});
 
