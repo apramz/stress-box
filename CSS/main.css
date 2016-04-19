@@ -68,12 +68,18 @@ header ul {
 html,
 body {
 	font-family: 'Roboto', sans-serif;
-	color: #404040;
 	background-color: #eee;
+	font-weight: 100;
+	color: #5A5A5A;
 }
 
-header.container {
-	margin: 0;
+h1 {
+	font-weight: 100;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 300;
 }
 
 .container#formbox {
