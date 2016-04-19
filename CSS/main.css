@@ -52,6 +52,11 @@ header ul {
 	vertical-align: middle;
 }
 
+/*.navbar li{
+	padding-left: 10px;
+	padding-right: 10px;
+}*/
+
 .navbar img {
 	width: 45px;
 	height: 45px;
