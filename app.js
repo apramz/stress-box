@@ -1,5 +1,16 @@
 var main = function() {
 
+/*****Adding Custom Name Function*****/
+
+    if($('.home').length > 0){
+        var name=prompt("Hi there!\nWhat's your name?");
+        if(name!= null){
+            $('h1 a').text(name);
+        }
+        else {
+            $('h1 a').text('there')
+        }
+    }
 /*****Posting Box Function*****/
 
     $('#post').click(function() {

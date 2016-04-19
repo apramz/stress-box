@@ -52,10 +52,10 @@ header ul {
 	vertical-align: middle;
 }
 
-/*.navbar li{
-	padding-left: 10px;
-	padding-right: 10px;
-}*/
+.navbar li{
+	padding-left: 15px;
+	padding-right: 15px;
+}
 
 .navbar img {
 	width: 45px;
@@ -75,6 +75,11 @@ body {
 
 h1 {
 	font-weight: 100;
+	font-size: 35px;
+}
+
+h1 a{
+
 }
 
 p {
@@ -117,7 +122,7 @@ p {
 	color: #fff;
 	background-color: #FF4F45;
 	padding: 15px;
-	margin: 5%;
+	margin: 4%;
 	border: none;
 }
 
