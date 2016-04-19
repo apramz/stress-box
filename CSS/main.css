@@ -8,6 +8,55 @@
 }
 
 /******************************
+			HEADER
+******************************/
+
+header {
+	padding: 20px;
+	display: flex;
+	font-family: 'Roboto', Arial;
+	font-weight: 500;
+	color: #6d6d6d;
+	vertical-align: center;
+	font-size: 18px;
+}
+
+header .row{
+	display: flex;
+	vertical-align: middle;
+	padding: 20px;
+}
+
+header img {
+	width: 80px;
+	height: 80px;
+}
+
+header p{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+header ul {
+	display: inline-block;
+}
+
+.navbar {
+	background-color: #eee;
+	border: none;
+	font-family: 'Roboto', Arial;
+	font-weight: 500;
+	font-size: 18px;
+	padding: 20px;
+	vertical-align: middle;
+}
+
+.navbar img {
+	width: 45px;
+	height: 45px;
+}
+/******************************
 			BODY
 ******************************/
 
@@ -18,23 +67,11 @@ body {
 	background-color: #eee;
 }
 
-header {
-	padding: 20px 0;
-}
-
-header .row {
-	display: flex;
-	align-item: center;
-	padding-top: 20px;
-}
-
-header h1 {
-	font-family: proximaNova;
-	color: #1E8BC3;
+header.container {
 	margin: 0;
 }
 
-.container {
+.container#formbox {
 	width: 550px;
 	margin-top: 15px;
 }
@@ -63,6 +100,11 @@ header h1 {
 
 .btn{
 	align-content: center;
+}
+
+#believe {
+	font-family: 'Roboto';
+
 }
 
 .posts {

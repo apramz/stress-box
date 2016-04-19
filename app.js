@@ -1,8 +1,4 @@
 var main = function() {
-    var name = prompt("Hi there!\nWhat's your name?");
-    if(name != null) {
-        window.alert('Nice to meet you', name)
-    }
 
     $('#post').click(function() {
         var post = $('.status-box').val();
@@ -41,8 +37,13 @@ var main = function() {
     	$('.selected').remove();
 	});
 
-    $('#believe').click(function() {
-        window.alert('You can do it!');
+    $('#believe').dialog({
+        autoOpen: false,
+        minHeight: 100,
+    });    
+
+    $('#opener').click(function() {
+        $('#believe').dialog('open').fadeIn(500);
     });
 
     $('#post').addClass('disabled');
