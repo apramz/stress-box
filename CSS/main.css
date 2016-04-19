@@ -92,11 +92,6 @@ p {
 	color: #34495e;
 }
 
-/*#post {
-	background-color: #27ae60;
-	border-color: #27ae60;
-}*/
-
 #delete {
 	background-color: #e74c3c;
 	border-color: #e74c3c;
@@ -109,13 +104,46 @@ p {
 	margin-right: 10px;
 }
 
-.btn{
-	align-content: center;
-}
-
 #believe {
 	font-family: 'Roboto';
+}
 
+#start {
+	vertical-align: middle;
+	width: 160px;
+	height: 60px;
+	font-family: proximaNova;
+	font-size: 22px;
+	color: #fff;
+	background-color: #FF4F45;
+	padding: 15px;
+	margin: 5%;
+	border: none;
+}
+
+.pulse {
+	-webkit-animation-name: pulsate;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite
+}
+
+@-webkit-keyframes pulsate {
+	0% { opacity: .75}
+	10% { opacity: .80}
+	20% { opacity: .85 }
+	30% { opacity: .90 }
+	40% { opacity: .95 } 
+	50% { opacity: 1.0}
+	60% { opacity: .95}
+	70% { opacity: .90}
+	80% { opacity: .85}
+	90% { opacity: .80}
+	100% { opacity: .75}
+}
+
+#start:hover {
+	background-color: #FF3429;
 }
 
 .posts {

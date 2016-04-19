@@ -1,5 +1,7 @@
 var main = function() {
 
+/*****Posting Box Function*****/
+
     $('#post').click(function() {
         var post = $('.status-box').val();
         $('<li>').text(post).prependTo('.posts');
@@ -24,6 +26,10 @@ var main = function() {
     	}
     });
 
+    $('#post').addClass('disabled');    
+
+/*****List Click Function*****/
+
     $('.posts').on('click', 'li', function() {
 		if($(this).hasClass('selected')) {
             $(this).removeClass('selected').effect('shake', {times: 2}, 300);
@@ -37,6 +43,8 @@ var main = function() {
     	$('.selected').remove();
 	});
 
+/*****Believe Button Function*****/
+
     $('#believe').dialog({
         autoOpen: false,
         minHeight: 100,
@@ -46,7 +54,12 @@ var main = function() {
         $('#believe').dialog('open').fadeIn(500);
     });
 
-    $('#post').addClass('disabled');
+/*****Pulse Button Function*****/
+
+    $('#start').click(function(){
+        $(this).removeClass('pulse');
+    });
+
 };
 
 $(document).ready(main)
