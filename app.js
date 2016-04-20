@@ -43,10 +43,10 @@ var main = function() {
 
     $('.posts').on('click', 'li', function() {
 		if($(this).hasClass('selected')) {
-            $(this).removeClass('selected').effect('shake', {times: 1}, 300);
+            $(this).removeClass('selected pulse').effect('shake', {times: 1}, 300);
         }
         else {
-            $(this).addClass('selected').effect('shake', {times: 1}, 300);                  
+            $(this).addClass('selected pulse').effect('shake', {times: 1}, 300);                  
         }
 	});
 
