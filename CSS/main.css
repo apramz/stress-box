@@ -78,13 +78,29 @@ h1 {
 	font-size: 35px;
 }
 
-h1 a{
-
-}
 
 p {
 	font-size: 16px;
 	font-weight: 300;
+}
+
+#input1 {
+	border: none;
+	border-bottom: 2px #5A5A5A solid;
+	font-size: 30px;
+	width: 40%;
+	padding: 12px 20px;
+	background-color: #eee;
+	margin-top: 8%;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+}
+
+#blurb {
+	visibility: hidden;
+	line-height: 2.0;
 }
 
 .container#formbox {
@@ -130,6 +146,7 @@ p {
 	padding: 15px;
 	margin: 4%;
 	border: none;
+	visibility: hidden;
 }
 
 .pulse {

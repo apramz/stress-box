@@ -1,7 +1,8 @@
 var main = function() {
 
 /*****Adding Custom Name Function*****/
-
+    
+    /*
     if($('.home').length > 0){
         var name=prompt("Hi there!\nWhat's your name?");
         if(name!= null){
@@ -11,6 +12,21 @@ var main = function() {
             $('h1 a').text('there')
         }
     }
+    */
+
+    $('#input1').keyup(function (e){
+
+        if (e.keyCode == 13){
+            var name = document.getElementById("input1").value;
+            $('#input1').remove();
+            document.getElementById("greeting").innerHTML = "Hey " + name + ". What's bothering you?";
+
+            $('#start').css('visibility', 'visible');  
+            $('#blurb').css('visibility', 'visible')          
+        }
+
+    });
+
 /*****Posting Box Function*****/
 
     $('#post').click(function() {
@@ -66,7 +82,7 @@ var main = function() {
     });
 
 /*****Pulse Button Function*****/
-
+    
     $('#start').click(function(){
         $(this).removeClass('pulse');
     });
