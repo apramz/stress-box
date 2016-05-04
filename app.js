@@ -37,16 +37,13 @@ var main = function() {
             var name = document.getElementById("input1").value;
             $('#input1').remove();
             $('#prompt').remove();
-            document.getElementById("greeting").innerHTML = "Hi " + name + ". What's bothering you?";
-
-            $('#start').css('visibility', 'visible').fadeIn(1000);  
-            $('#blurb').css('visibility', 'visible').fadeIn(1000)          
+            document.getElementById("greeting").innerHTML = "Hi " + name + ". What's bothering you?";      
         }
 
     });
 
-/*****Posting Box Function*****/
-
+/*****List Posting Box Function*****/
+    
     $('#post').click(function() {
         var post = $('.status-box').val();
         /*$('<li>').text(post).prependTo('.posts');*/
@@ -90,7 +87,23 @@ var main = function() {
     	$('.selected').remove();
 	});
 
-/*****Believe Button Function*****/
+/*****Table Posting Box Function****/
+
+    $('#post').click(function(){
+        var post = $('.status-box').val();
+        var
+        $('#posts tbody').append(
+            "<tr>"+
+            "<td>"+
+            post+
+            "</td>"+
+            "<td><a href='#'>blah</a></td>"+
+            "</tr>"
+            );              
+    });
+
+
+/*****Believe Button Function*****
 
     $('#believe').dialog({
         autoOpen: false,
@@ -100,9 +113,9 @@ var main = function() {
     $('#opener').click(function() {
         $('#believe').dialog('open').fadeIn(500);
     });
-
+*/
 /*****Pulse Button Function*****/
-    
+
     $('#start').click(function(){
         $(this).removeClass('pulse');
     });
