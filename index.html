@@ -18,6 +18,7 @@
 					<li><a href="index.html">Stressbox</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
+					<li><a href="post.html">Post</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">FAQ</a></li>
 					<li><a href="#">Contact</a></li>
@@ -26,8 +27,10 @@
 		</nav>	
 		<div class="container">
 			<div class="page-header text-center">
-				<!--<h1>Hi <a></a>. What's bothering you?</h1>-->
+				<!--CODE FOR BLANK HOME PAGE NAME PROMPT->
 				<h1><input type="text" id="input1" placeholder="What's your name?" autofocus /></h1><h1 id="greeting"></h1>
+				-->
+				<h1 id="prompt">Hi <input type="text" id="input1" onkeypress="this.style.width = ((this.value.length + 10) * 10) + 'px';" autofocus />. What's bothering you?</h1><h1 id="greeting"></h1>
 			</div>
 			<p class="text-center" id="blurb">A great way to relieve stress is to write it out. Ditch the pen and stuff your words into<br>Stressbox. Then, click and delete them for some quick, easy, and low-budget stress relief!</p>
 		</div>	

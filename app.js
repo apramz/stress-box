@@ -2,7 +2,7 @@ var main = function() {
 
 /*****Adding Custom Name Function*****/
     
-    /*
+    /*--WINDOW PROMPT FOR NAME--
     if($('.home').length > 0){
         var name=prompt("Hi there!\nWhat's your name?");
         if(name!= null){
@@ -14,6 +14,7 @@ var main = function() {
     }
     */
 
+    /*--CODE FOR BLANK HOME PAGE NAME PROMPT--
     $('#input1').keyup(function (e){
 
         if (e.keyCode == 13){
@@ -22,7 +23,24 @@ var main = function() {
             document.getElementById("greeting").innerHTML = "Hey " + name + ". What's bothering you?";
 
             $('#start').css('visibility', 'visible');  
-            $('#blurb').css('visibility', 'visible')          
+            $('#blurb').css('visibility', 'visible');          
+        }
+
+    });
+
+    */
+
+/****CODE FOR CUSTOM NAME PAGE PROMPT****/
+     $('#input1').keyup(function (e){
+
+        if (e.keyCode == 13){
+            var name = document.getElementById("input1").value;
+            $('#input1').remove();
+            $('#prompt').remove();
+            document.getElementById("greeting").innerHTML = "Hi " + name + ". What's bothering you?";
+
+            $('#start').css('visibility', 'visible').fadeIn(1000);  
+            $('#blurb').css('visibility', 'visible').fadeIn(1000)          
         }
 
     });
@@ -31,7 +49,9 @@ var main = function() {
 
     $('#post').click(function() {
         var post = $('.status-box').val();
-        $('<li>').text(post).prependTo('.posts');
+        /*$('<li>').text(post).prependTo('.posts');*/
+        var item = $('<li>').text(post);
+        $('.posts').prepend(item);
         $('.status-box').val('');
         $('.counter').text('140');
         $('#post').addClass('disabled');

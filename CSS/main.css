@@ -11,37 +11,6 @@
 			HEADER
 ******************************/
 
-header {
-	padding: 20px;
-	display: flex;
-	font-family: 'Roboto', Arial;
-	font-weight: 500;
-	color: #6d6d6d;
-	vertical-align: center;
-	font-size: 18px;
-}
-
-header .row{
-	display: flex;
-	vertical-align: middle;
-	padding: 20px;
-}
-
-header img {
-	width: 80px;
-	height: 80px;
-}
-
-header p{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-header ul {
-	display: inline-block;
-}
-
 .navbar {
 	background-color: #eee;
 	border: none;
@@ -86,12 +55,11 @@ p {
 
 #input1 {
 	border: none;
-	border-bottom: 2px #5A5A5A solid;
-	font-size: 30px;
-	width: 40%;
-	padding: 12px 20px;
+	border-bottom: 1px #5A5A5A solid;
+	color: #29ABED;
+	width: 10%;
+	padding: 3px 14px;
 	background-color: #eee;
-	margin-top: 8%;
 }
 
 input:focus, textarea:focus {
@@ -99,7 +67,6 @@ input:focus, textarea:focus {
 }
 
 #blurb {
-	visibility: hidden;
 	line-height: 2.0;
 }
 
@@ -146,7 +113,6 @@ input:focus, textarea:focus {
 	padding: 15px;
 	margin: 4%;
 	border: none;
-	visibility: hidden;
 }
 
 .pulse {
