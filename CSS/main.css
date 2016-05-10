@@ -82,12 +82,14 @@ input:focus, textarea:focus {
 
 .btn {
 	font-family: 'Roboto';
-	font-weight: 300;	
+	font-weight: 300;
+	background-color: #3498DB;
+	border-color: #3498DB;
 }
 
-#delete {
-	background-color: #e74c3c;
-	border-color: #e74c3c;
+.btn:hover{
+	background-color: #1E8BC3;
+	border-color: #1E8BC3;
 }
 
 .counter {
@@ -96,10 +98,6 @@ input:focus, textarea:focus {
 	margin-bottom: 0;
 	margin-right: 10px;
 	font-size: 12px;
-}
-
-#believe {
-	font-family: 'Roboto';
 }
 
 #start {
@@ -163,4 +161,54 @@ input:focus, textarea:focus {
 li.selected {
 	background-color: #e74c3c;
 	color: #fff;
+}
+
+table {
+	width: 520px;
+	padding: 5px;
+}
+
+table, tr {
+	padding: 5px;
+}
+
+table, td {
+	border: 1px solid #d8d8d8;
+	padding: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+tr {
+	background-color: #fff;
+}
+
+td a {
+	display:block;
+    width: 100%;
+    color: #EF4836;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+td a:hover{color: white}
+
+.entry:hover{
+	background-color: #29BFED;
+	color: white;
+}
+
+#delete:hover{
+	background-color: #EF4836;
+	color: white;
+}
+
+#delete {
+	border: 1px solid #d8d8d8;
+	width: 50px;
+	text-align: center;
+	font-size: 10px;
+	font-weight: 500;
+	padding: 0;
 }
